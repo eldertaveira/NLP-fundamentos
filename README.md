@@ -4,27 +4,29 @@ No contexto do Processamento de Linguagem Natural (PLN), as expressões regulare
 
 Algumas situações em que as expressões regulares são úteis no PLN incluem:
 
-Tokenização: Dividir um texto em unidades significativas, chamadas de tokens. Por exemplo, uma expressão regular pode ser usada para dividir um texto em palavras, removendo pontuações.
+**Tokenização**: Dividir um texto em unidades significativas, chamadas de tokens. Por exemplo, uma expressão regular pode ser usada para dividir um texto em palavras, removendo pontuações.
 
-Remoção de Stop Words: Expressões regulares podem ser usadas para identificar e remover palavras comuns (stop words) de um texto.
+**Remoção de Stop Words**: Expressões regulares podem ser usadas para identificar e remover palavras comuns (stop words) de um texto.
 
-Extração de Informações: Ao buscar padrões específicos em um texto, como datas, números de telefone, endereços de e-mail, etc., as expressões regulares podem ser úteis para extrair essas informações.
+**Extração de Informações**: Ao buscar padrões específicos em um texto, como datas, números de telefone, endereços de e-mail, etc., as expressões regulares podem ser úteis para extrair essas informações.
 
-Limpeza de Texto: Remover caracteres indesejados, espaços extras, ou realizar outras tarefas de limpeza no texto.
+**Limpeza de Texto**: Remover caracteres indesejados, espaços extras, ou realizar outras tarefas de limpeza no texto.
 
-Validação de Formatos: Verificar se o texto segue um formato específico, como um formato de data ou número de telefone.
+**Validação de Formatos**: Verificar se o texto segue um formato específico, como um formato de data ou número de telefone.
 
-Expressoes Regulares
-
+Expressoes Regulares bastante utilizadas.
+```
 #importação da biblioteca 
 import re
 
-"\w+ - matches word - Magic"
-"\d+ - matches digits - g "
-"\s -  matches spaces - ' ' "
-" .* -  matches wildcard - 'username74' " 
+\w+ - matches word - Magic
+\d+ - matches digits - g 
+\s -  matches spaces - ' ' 
+.* -  matches wildcard - 'username74' 
 
-" + or * - greedy match - 'aaaaa' " 
++ or * - greedy match - 'aaaaa' 
+\S - matches not space - 'no_spaces'
+[a-z] - lowercase group - 'abcdef'
+```
 
-"\S - matches not space - 'no_spaces' "
-"[a-z] - lowercase group - 'abcdef' "
+
